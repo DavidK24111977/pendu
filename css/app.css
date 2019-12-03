@@ -6,23 +6,39 @@
     text-align: center;
     padding: 50px;
 }
-
 #word {
     margin: 20px 0;
     display: flex;
     height: 50px;
     justify-content: center;
 }
-
 #word span {
     border-bottom: 1px solid #222;
     display: inline-block;
     margin: 0 15px;
     width: 25px;
-
     font-size: 3em;
 }
 strong{
     font-weight: 700;
     font-size: 1.3em;
+}
+#message, #compteur{
+    margin: 20px 0;
+}
+li{
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+#play{
+    display: none;
+}
+#draw{
+    width: 1024px;
+    margin: 20px auto;
+    text-align: center;
+}
+canvas {
+    border: 1px solid black;
 }

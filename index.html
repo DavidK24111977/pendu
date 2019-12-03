@@ -9,19 +9,36 @@
     <title>Le jeu du pendu</title>
 </head>
 <body>
+<div id="draw">
+    <canvas id="pendu" width="300" height="300"></canvas>
+</div>
 <div class="container">
-    <div>
-        <label for="yourLetter">Votre Lettre</label>
-        <input type="text" id="yourLetter">
-        <input type="submit" id="submitLetter" value="proposer">
+    <div id="playContent">
+        <label for="selectPlay">Niveau de difficulté</label>
+        <select name="btnPlay" id="selectPlay">
+            <option value="">---</option>
+            <option value="noob">Noob</option>
+            <option value="pgm">PGM</option>
+        </select>
     </div>
-    <div id="word">
-    </div>
-    <div id="message">
 
-    </div>
-    <div id="compteur">
+    <div id="play">
+        <div>
+            <label for="yourLetter">Votre Lettre</label>
+            <input type="text" id="yourLetter">
+            <input type="submit" id="submitLetter" value="proposer">
+        </div>
+        <div id="word">
+        </div>
+        <div id="message">
 
+        </div>
+        <div id="compteur">
+
+        </div>
+        <ul id="proposition">
+            <li><strong>Lettre déjà proposée:</strong></li>
+        </ul>
     </div>
 </div>
 <script src="js/app.js"></script>
